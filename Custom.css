@@ -48,20 +48,40 @@ body.platform-linux .monospace, body.platform-linux .source-code
 }
 
 li.parent::before {
-content: url(chrome-devtools://devtools/Images/treeRightTriangleWhite.png) !important;
-opacity: 0.75;
-float: left;
-width: 8px;
-height: 8px;
-margin-top: 0;
-padding-right: 3px;
--webkit-user-select: none;
-cursor: default;
+ content: url(chrome-devtools://devtools/Images/treeRightTriangleWhite.png) !important;
+ opacity: 0.75;
+ float: left; 
+ width: 8px;
+ height: 8px;
+ margin-top: 0;
+ padding-right: 3px;
+ -webkit-user-select: none;
+ cursor: default;
 }
 
 .webkit-html-error-message {
-background-color: rgba(65, 5, 5, 0.92) !important;
-border: 2px solid rgb(100%, 31%, 31%);
+ background-color: rgba(65, 5, 5, 0.92) !important;
+ border: 2px solid rgb(100%, 31%, 31%);
+}
+
+.breakpoint-list li {
+  color: rgb(240, 157, 93) !important;
+}
+
+#drawer {
+ background-color: black !important;
+ color: white !important;
+}
+
+.console-message, .console-user-command {
+   border-top-color: black !important;
+   border-bottom-color: black !important;
+}
+
+
+#console-prompt {
+   border-top-color: black !important;
+   border-bottom-color: black !important;
 }
 
 /*
@@ -88,7 +108,7 @@ border: 2px solid rgb(100%, 31%, 31%);
 */
 
 ::-webkit-scrollbar-track {
-	background:#202020;
+    background:#202020;
 	border: 1px solid #505050;
 	box-shadow: 0px 0px 3px #404040 inset;
 	border-radius: 5px !important;
@@ -374,9 +394,13 @@ a#cnt:visited
   }
   
   #elements-content li.hovered:not(.selected) .selection {
-    background: rgba(255, 255, 255, .12) !important;
+    background: rgba(255, 255, 255, .25) !important;
   }
  
+  .section li.hovered {
+    background: rgba(255, 255, 255, .30) !important;
+  }
+
   #elements-content .selection.selected {
     z-index: 0 !important;
   }
