@@ -3,6 +3,7 @@ pitch-black
 
 Custom.css for Chrome (and Chromium) Developer Tools
 
+![screenshot](js-popup.PNG)
 ![screenshot](screenshot.PNG)
 
 To install on Chrome:
