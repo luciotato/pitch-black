@@ -47,7 +47,7 @@ body.platform-linux .monospace, body.platform-linux .source-code
  color: white !important;
 }
 
-li.parent::before {
+.section .header::before, li.parent::before {
  content: url(chrome-devtools://devtools/Images/treeRightTriangleWhite.png) !important;
  opacity: 0.75;
  float: left; 
@@ -68,6 +68,14 @@ li.parent::before {
   color: rgb(240, 157, 93) !important;
 }
 
+.placard {
+   background-color: #909090;
+}
+
+.section .header {
+  color: whitesmoke !important;
+}
+
 #drawer {
  background-color: black !important;
  color: white !important;
@@ -83,6 +91,79 @@ li.parent::before {
    border-top-color: black !important;
    border-bottom-color: black !important;
 }
+
+.console-formatted-string, .console-formatted-regexp {
+color: wheat !important;
+}
+
+.console-formatted-number {
+color: orange !important;
+}
+
+.console-formatted-object
+, .console-formatted-node
+, .console-formatted-array {
+  color: whitesmoke !important;
+}
+
+.webkit-html-external-link, .webkit-html-resource-link {
+   color: rgb(236, 236, 255) !important;
+}
+
+.source-frame-cursor-position {
+   color: black;
+}
+
+.popover {
+/*
+ border: 20 20 20 20 solid transparent;
+*/
+ border-top-width: 10px;
+ border-left-width: 10px;
+ border-right-width: 10px;
+ border-bottom-width: 10px;
+ border-style: outset;
+ border-color: transparent !important;
+ -webkit-border-image: none !important;
+// overflow: hidden;
+}
+
+.popover .spectrum-container {
+ top: 5px !important;
+ left:3px !important;
+}
+
+.popover .content{
+ background-color: #D0D000 !important;
+// margin -15 30 30 -15;
+// padding: 15 -15 -15  15;
+ padding-left: 6px;
+ padding-top: 4px;
+// margin-top: 5px;
+ margin-right: -10px;
+ margin-bottom: -14px;
+ border: 2px orange dashed !important;
+ border-radius: 5px !important;
+ box-shadow: 0 0 0 4px #D0D000; //, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+}
+
+.popover .arrow {
+left:3px !important;
+top:0px !important;
+}
+
+.popover .name {
+  color: darkgreen;
+}
+
+.popover .function-name {
+  color: darkgreen; !important;
+}
+
+.popover .function-location-link, .popover .webkit-html-resource-link {
+  color: #a04040 !important;
+}
+
 
 /*
 -------------
@@ -238,34 +319,95 @@ chrome search results... why?
 ---------------------
 */
 
-/*
 #cnt {
-   background: white !important;
+   background: #202020 !important;
 }
-*/
+
 
 #hdtbSum {
-   background: black !important;
-}
-#appbar {
-   background: black !important;
+   background: #101010 !important;
 }
 
-a#cnt:link
+.hdtb-tl {
+   color: #d0d0d0 !important;
+}
+
+.hdtb-tl:hover, #hdtb_tls.hdtb-tl-sel {
+   color: black !important;
+}
+
+.hdtb-mn-cont {
+   padding-left:360px;
+}
+
+.hdtb_msel {
+   background: #404040 !important;
+   color: #D0D0D0 !important;
+}
+
+.hdtb-mn-o, .hdtb-mn-c {
+   background: #303030 !important;
+}
+
+#hdtbSum .mn-hd-txt {
+   color: #B0B0B0 !important;
+}
+
+.hdtbItm.hdtbSel, #hdtb .hdtbItm a
+, #hdtb_more_mn a, .hdtbItm>label, #cdrlnk
 {
-   color: wheat !important;
+   background-color: #303030 !important;
+   border:0 !important;
+//   color: #909090 !important;
 }
 
-a#cnt:visited
+#hdtb .hdtbItm a:hover {
+   background-color: #500000 !important;
+}
+
+.cdr_sep {
+  border-top:0px !important;
+}
+
+.hdtbSel {
+   color: #d0d0d0 !important;
+   font-weight: bold !important;
+}
+
+#appbar {
+   background: #202020 !important;
+}
+
+
+#res {
+  width:210%
+}
+
+#cnt a:link
+{
+   color: #D0D080 !important;
+}
+
+#cnt  a:visited
 {
    color: grey !important;
 }
 
-.s#cnt 
+#cnt .s
 {
    color: lightgrey !important;
+   font-size: 15px;
 }
 
+.s div {
+   width:90%;
+}
+
+#cnt cite
+{
+   color: green !important;
+   font-weight: bold;
+}
 
 /*
 ---------------------
