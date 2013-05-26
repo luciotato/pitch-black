@@ -24,7 +24,8 @@ Mac:
 
 Windows XP:   
 <pre>
-C:\Users\**Your username**\AppData\Local\Google\Chrome\User Data\Default\User StyleSheets\
+C:\Documents and Settings\**Your username**\Local\Application Data\Google\Chrome\User Data\Default\User StyleSheets
+C:\Documents and Settings\**Your username**\Configuración local\Datos de programa\Google\Chrome\User Data\Default\User StyleSheets
 </pre>
 
 Windows 7:   
