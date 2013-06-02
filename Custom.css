@@ -1,5 +1,6 @@
 /*
 -------------------------------- 
+ pitch-black
  Dark Background
 
  Lucio M. Tato
@@ -134,7 +135,7 @@ color: orange !important;
 }
 
 .popover .content{
- background-color: #D0D000 !important;
+ background-color: #202020 !important;
 // margin -15 30 30 -15;
 // padding: 15 -15 -15  15;
  padding-left: 6px;
@@ -144,7 +145,7 @@ color: orange !important;
  margin-bottom: -14px;
  border: 2px orange dashed !important;
  border-radius: 5px !important;
- box-shadow: 0 0 0 4px #D0D000; //, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+ box-shadow: 0 0 0 4px #202020; //, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
 }
 
 .popover .arrow {
@@ -164,7 +165,17 @@ top:0px !important;
   color: #a04040 !important;
 }
 
+.source-frame-popover-title {
+  color:whitesmoke;
+}
 
+source-frame-popover-tree {
+top:22px;
+}
+
+.source-frame-eval-expression {
+  background-color: rgb(128, 128, 60) !important;
+}
 /*
 -------------
  line numbers
@@ -186,10 +197,9 @@ top:0px !important;
 ------------
  Scrollbars
 ------------ 
-*/
 
 ::-webkit-scrollbar-track {
-    background:#202020;
+	background:#202020;
 	border: 1px solid #505050;
 	box-shadow: 0px 0px 3px #404040 inset;
 	border-radius: 5px !important;
@@ -208,6 +218,7 @@ top:0px !important;
 ::-webkit-scrollbar-thumb:hover {
 	background:rgb(220, 235, 144);
 }			
+*/
 
 
 /*
