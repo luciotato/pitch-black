@@ -16,13 +16,15 @@ body.platform-windows .monospace, body.platform-windows .source-code ,
 body.platform-linux .monospace, body.platform-linux .source-code
 {
     font-family: "Panic Sans", "DroidSansMono", Menlo, Consolas, Lucida Console, dejavu sans mono, monospace !important;
-    font-size: 14pt !important;
     background-color: black  !important;
     color: white !important;
 }
 
 .suggest-box {
     background-color: black !important;
+}
+div.suggest-box-content-item.selected {
+    background-color: #404040 !important;
 }
 
 .prefix
@@ -329,7 +331,7 @@ span.name {
 }
 
 .error {
-    color: red !important;
+    color: orange !important;
 }
 
 .section .properties .dimmed {
@@ -438,7 +440,7 @@ chrome search results... why?
 #cnt .s
 {
    color: lightgrey !important;
-   font-size: 15px;
+   /*font-size: 15px;*/
 }
 
 .s div {
@@ -666,7 +668,11 @@ chrome search results... why?
     color: #a2f1ae !important;
   }
 
-  .cm-css-property {
+.webkit-css-property,
+.webkit-css-at-rule {
+    color: rgb(255, 255, 255) !important;
+
+}.cm-css-property {
     color: #dfdfdf !important;
   }
 
